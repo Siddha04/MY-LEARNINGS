@@ -1,16 +1,18 @@
-# This is a sample Python script.
+import matplotlib.pyplot as plt
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Sample data: x-axis values and corresponding y-axis values
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
 
+# Create the plot
+plt.plot(x, y, marker='o', linestyle='-', color='b', label='y = 2x')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Add labels and title
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.title('Basic Line Plot')
+plt.legend()  # Show the label
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Display the plot
+plt.grid(True)  # Optional: adds a grid
+plt.show()
